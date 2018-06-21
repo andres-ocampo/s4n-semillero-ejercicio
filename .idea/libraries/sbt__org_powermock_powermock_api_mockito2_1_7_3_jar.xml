@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="sbt: org.powermock:powermock-api-mockito2:1.7.3:jar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.powermock/powermock-api-mockito2/jars/powermock-api-mockito2-1.7.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.ivy2/cache/org.powermock/powermock-api-mockito2/srcs/powermock-api-mockito2-1.7.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
