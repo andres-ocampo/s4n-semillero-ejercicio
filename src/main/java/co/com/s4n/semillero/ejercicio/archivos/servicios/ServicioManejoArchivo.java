@@ -1,10 +1,13 @@
 package co.com.s4n.semillero.ejercicio.archivos.servicios;
 
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
+import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import io.vavr.collection.List;
 import io.vavr.collection.Seq;
 import io.vavr.control.Try;
 import io.vavr.control.Validation;
 
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -36,4 +39,30 @@ public class ServicioManejoArchivo {
     }
 
 
+    public static Try<String> escribirArchivo(List<Dron> reporteDrones){
+        Path path = Paths.get("src/main/resources/out.txt");
+        Try<String> file = Try.of(() -> {
+            List<String> line = List.of();
+            line = line.append("== Reporte de entregas ==");
+            for (Dron dron : reporteDrones) {
+                line = line.append("(" + dron.getPosicion().getX()
+                        + ", " + dron.getPosicion().getY()
+                        + ") dirección "
+                        + ServicioManejoArchivo.enumToString(dron.getPosicion().getDireccion()));
+            }
+            Files.write(path, line, Charset.defaultCharset());
+            return "";
+        });
+        return file;
+    }
+
+    private static String enumToString(Direccion d){
+        switch (d){
+            case NORTE: return "Norte";
+            case OESTE: return "Oeste";
+            case SUR:   return "Sur";
+            case ESTE:  return "Este";
+        }
+        return "";
+    }
 }

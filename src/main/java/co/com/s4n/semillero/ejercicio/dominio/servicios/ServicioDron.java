@@ -1,10 +1,7 @@
 package co.com.s4n.semillero.ejercicio.dominio.servicios;
 
 import co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo;
-import co.com.s4n.semillero.ejercicio.dominio.entidades.Almuerzo;
-import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
-import co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega;
-import co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.*;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import io.vavr.collection.List;
 import io.vavr.control.Option;
@@ -12,7 +9,7 @@ import io.vavr.control.Try;
 
 public class ServicioDron {
 
-    static public Try<Dron> avanzar(Dron dron){
+    static public Try<Dron> avanzar(Dron dron, Barrio barrio){
         int x = dron.getPosicion().getX();
         int y = dron.getPosicion().getY();
         switch (dron.getPosicion().getDireccion()) {
@@ -32,6 +29,8 @@ public class ServicioDron {
                 return null;
         }
         Posicion posicion = new Posicion(x,y,dron.getPosicion().getDireccion());
+        if(posicion.getX() > barrio.limite || posicion.getY() > barrio.limite)
+            return Try.failure(new Exception());
         return Try.of(() -> new Dron(dron.getId(),posicion,dron.getEntregas()));
     }
 

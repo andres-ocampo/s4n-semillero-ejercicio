@@ -1,7 +1,12 @@
 package co.com.s4n.semillero.ejercicio.dominio.entidades;
 
+import co.com.s4n.semillero.ejercicio.dominio.vo.Movimiento;
+import io.vavr.collection.List;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
+
+@AllArgsConstructor
 public class Entrega {
 
     @Getter
@@ -9,11 +14,6 @@ public class Entrega {
     @Getter
     private Almuerzo almuerzo;
     @Getter
-    private char[] ruta;
+    private List<Movimiento> movimientos;
 
-    public Entrega(boolean activa, Almuerzo almuerzo, char[] movimientos) {
-        this.activa = activa;
-        this.almuerzo = almuerzo;
-        this.ruta = movimientos;
-    }
 }

@@ -12,17 +12,27 @@ import io.vavr.control.Try;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 public class ServicioEntregaSuite {
 
     @Test
     public void testRealizarEntrega(){
         Dron dron = new Dron(1,new Posicion(0,0,Direccion.NORTE),List.empty());
-        Entrega entrega = new Entrega(true,new Almuerzo(1,"Arroz"),"AAAAIAAD".toCharArray());
+        Entrega entrega = new Entrega(true,
+                new Almuerzo(1,"Arroz"),
+                ServicioEntrega.charToMovimiento("AAAAIAAD".toCharArray()));
         Try<Dron> dronOption = ServicioEntrega.realizarEntrega(dron, entrega);
-        ServicioEntrega.cargarRuta();
+        ServicioEntrega.iniciar();
         assertEquals(Direccion.NORTE, dronOption.getOrElse(dron).getPosicion().getDireccion());
         assertEquals(-2, dronOption.getOrElse(dron).getPosicion().getX());
         assertEquals(4, dronOption.getOrElse(dron).getPosicion().getY());
+    }
+
+    @Test
+    public void testCargarRutas(){
+        List<Entrega> entregas = ServicioEntrega.cargarRuta();
+        assertFalse(entregas.isEmpty());
     }
 }
