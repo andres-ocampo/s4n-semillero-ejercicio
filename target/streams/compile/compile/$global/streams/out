@@ -1,0 +1,354 @@
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:5:1: package io.vavr.collection does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.collection.List;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:6:1: package io.vavr.collection does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.collection.Seq;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:7:1: package io.vavr.control does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.control.Try;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:8:1: package io.vavr.control does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.control.Validation;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:16:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Try[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<String, String> tryEsExitoso(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:16:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<String, String> tryEsExitoso(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:16:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<String, String> tryEsExitoso(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Try[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<String, String> tieneTresLineas(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<String, String> tieneTresLineas(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<String, String> tieneTresLineas(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Try[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<Seq<String>, String> validar(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<Seq<String>, String> validar(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<Seq<String>, String> validar(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:26:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Seq[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    private static Validation<Seq<String>, String> validar(Try<List<String>> archivo) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:33:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m    public static List<String> leerArchivo(){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Entrega.java:3:1: package lombok does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport lombok.Getter;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Almuerzo.java:2:1: package lombok does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport lombok.Getter;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:4:1: package io.vavr.collection does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.collection.List;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:5:1: package lombok does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport lombok.AllArgsConstructor;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:6:1: package lombok does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport lombok.Getter;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:7:1: package lombok does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport lombok.ToString;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:9:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class AllArgsConstructor[0m
+[0m[[0m[31merror[0m] [0m[0m@AllArgsConstructor[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:10:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol: class ToString[0m
+[0m[[0m[31merror[0m] [0m[0m@ToString[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Posicion.java:3:1: package lombok does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport lombok.Getter;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m    private List<Entrega> entregas;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:6:1: package io.vavr.control does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.control.Option;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:10:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m    static public Option<Dron> avanzar(Dron dron){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:33:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m    static public Option<Dron> girarDerecha(Dron dron){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:54:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m    static public Option<Dron> girarIzquierda(Dron dron){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:6:1: package io.vavr.collection does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.collection.List;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:7:1: package io.vavr.control does not exist[0m
+[0m[[0m[31merror[0m] [0m[0mimport io.vavr.control.Option;[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:11:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega[0m
+[0m[[0m[31merror[0m] [0m[0m    public static Option<Dron> realizarEntrega(Dron dron){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Entrega.java:7:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Entrega.java:9:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Entrega.java:11:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Almuerzo.java:6:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Almuerzo[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Almuerzo.java:8:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Almuerzo[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:13:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:15:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:17:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Dron.java:19:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Posicion.java:6:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/entidades/Posicion.java:8:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Getter[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion[0m
+[0m[[0m[31merror[0m] [0m[0m    @Getter[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:17:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        if(archivo.isFailure()) return Validation.invalid("No se pudo leer el archivo");[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:18:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        else return Validation.valid("Archivo leído con éxito");[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:22:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        if(archivo.getOrElse(List.of()).size() == 3) return Validation.valid("El archivo tiene tres líneas");[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:22:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        if(archivo.getOrElse(List.of()).size() == 3) return Validation.valid("El archivo tiene tres líneas");[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:23:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        else return Validation.invalid("El archivo no tiene tres líneas");[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:27:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        return Validation[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Try[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Try[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Validation[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        Validation<Seq<String>, String> res = validar(archivo);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Seq[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        Validation<Seq<String>, String> res = validar(archivo);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:37:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        return res.isValid() ? archivo.getOrElse(List.of()) : List.of();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:37:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        return res.isValid() ? archivo.getOrElse(List.of()) : List.of();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/archivos/servicios/ServicioManejoArchivo.java:41:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo[0m
+[0m[[0m[31merror[0m] [0m[0m        List<String> archivo = leerArchivo();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:11:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getPosicion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        int x = dron.getPosicion().getX();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:12:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getPosicion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        int y = dron.getPosicion().getY();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:13:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getDireccion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        switch (dron.getDireccion()) {[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:14:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable NORTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case NORTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:17:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable ESTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case ESTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable SUR[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case SUR:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:23:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable OESTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case OESTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getId()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),posicion,dron.getDireccion(),dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getDireccion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),posicion,dron.getDireccion(),dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getEntregas()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),posicion,dron.getDireccion(),dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:30:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),posicion,dron.getDireccion(),dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:34:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getDireccion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        Direccion d = dron.getDireccion();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:35:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getDireccion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        switch (dron.getDireccion()){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:36:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable NORTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case NORTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:39:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable ESTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case ESTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:42:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable SUR[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case SUR:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:45:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable OESTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case OESTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:51:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getId()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:51:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getPosicion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:51:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getEntregas()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:51:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:55:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getDireccion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        Direccion d = dron.getDireccion();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:56:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getDireccion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        switch (dron.getDireccion()){[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:57:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable NORTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case NORTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:60:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable ESTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case ESTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:63:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable SUR[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case SUR:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:66:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable OESTE[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m            case OESTE:[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getId()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getPosicion()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getEntregas()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable dron of type co.com.s4n.semillero.ejercicio.dominio.entidades.Dron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioDron.java:72:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioDron[0m
+[0m[[0m[31merror[0m] [0m[0m        return Option.of(new Dron(dron.getId(),dron.getPosicion(),d,dron.getEntregas()));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:14:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class List[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega[0m
+[0m[[0m[31merror[0m] [0m[0m        List<String> list = ServicioManejoArchivo.leerArchivo();[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:17:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getRuta()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable entrega of type co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m        System.out.println(entrega.getRuta());[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:18:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   class Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega[0m
+[0m[[0m[31merror[0m] [0m[0m        Option<Dron> dronOption = Option.of(dron);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:18:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   variable Option[0m
+[0m[[0m[31merror[0m] [0m[0m  location: class co.com.s4n.semillero.ejercicio.dominio.servicios.ServicioEntrega[0m
+[0m[[0m[31merror[0m] [0m[0m        Option<Dron> dronOption = Option.of(dron);[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:19:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getRuta()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable entrega of type co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m        for (int i = 0; i < entrega.getRuta().length; i++)[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:20:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getRuta()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable entrega of type co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m            if (entrega.getRuta()[i] == 'A') dronOption = ServicioDron.avanzar(dronOption.getOrElse(dron));[0m
+[0m[[0m[31merror[0m] [0m[0m/home/s4n/s4n-semillero-ejercicio/src/main/java/co/com/s4n/semillero/ejercicio/dominio/servicios/ServicioEntrega.java:21:1: cannot find symbol[0m
+[0m[[0m[31merror[0m] [0m[0m  symbol:   method getRuta()[0m
+[0m[[0m[31merror[0m] [0m[0m  location: variable entrega of type co.com.s4n.semillero.ejercicio.dominio.entidades.Entrega[0m
+[0m[[0m[31merror[0m] [0m[0m            else if (entrega.getRuta()[i] == 'D') dronOption = ServicioDron.girarDerecha(dronOption.getOrElse(dron));[0m
