@@ -255,7 +255,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -512,7 +512,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4976415" visible="true" weight="0.2786759" />
-      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" sideWeight="0.4996151" weight="0.32913387" />
+      <window_info anchor="bottom" id="sbt-shell-toolwindow" order="7" sideWeight="0.4996151" weight="0.328594" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32913387" />
       <window_info id="Structure" order="1" sideWeight="0.5023585" side_tool="true" visible="true" weight="0.2786759" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
