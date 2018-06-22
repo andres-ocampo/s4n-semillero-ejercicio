@@ -24,7 +24,6 @@ public class ServicioEntregaSuite {
                 new Almuerzo(1,"Arroz"),
                 ServicioEntrega.charToMovimiento("AAAAIAAD".toCharArray()));
         Try<Dron> dronOption = ServicioEntrega.realizarEntrega(dron, entrega);
-        ServicioEntrega.iniciar();
         assertEquals(Direccion.NORTE, dronOption.getOrElse(dron).getPosicion().getDireccion());
         assertEquals(-2, dronOption.getOrElse(dron).getPosicion().getX());
         assertEquals(4, dronOption.getOrElse(dron).getPosicion().getY());
@@ -32,7 +31,14 @@ public class ServicioEntregaSuite {
 
     @Test
     public void testCargarRutas(){
-        List<Entrega> entregas = ServicioEntrega.cargarRuta();
+        Try<List<Entrega>> entregas = ServicioEntrega.cargarRuta();
+        assertTrue(entregas.isSuccess());
         assertFalse(entregas.isEmpty());
+    }
+
+    @Test
+    public void testIniciarDespacho(){
+        Try<String> res = ServicioEntrega.iniciarDespacho();
+        assertTrue(res.isSuccess());
     }
 }

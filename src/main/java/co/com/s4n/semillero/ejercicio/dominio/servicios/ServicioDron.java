@@ -1,10 +1,9 @@
 package co.com.s4n.semillero.ejercicio.dominio.servicios;
 
-import co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo;
-import co.com.s4n.semillero.ejercicio.dominio.entidades.*;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Barrio;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Dron;
+import co.com.s4n.semillero.ejercicio.dominio.entidades.Posicion;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
-import io.vavr.collection.List;
-import io.vavr.control.Option;
 import io.vavr.control.Try;
 
 public class ServicioDron {
@@ -29,7 +28,7 @@ public class ServicioDron {
                 return null;
         }
         Posicion posicion = new Posicion(x,y,dron.getPosicion().getDireccion());
-        if(posicion.getX() > barrio.limite || posicion.getY() > barrio.limite)
+        if(Math.abs(posicion.getX()) > barrio.limite || Math.abs(posicion.getY()) > barrio.limite)
             return Try.failure(new Exception());
         return Try.of(() -> new Dron(dron.getId(),posicion,dron.getEntregas()));
     }
@@ -77,16 +76,4 @@ public class ServicioDron {
         Posicion posicion = new Posicion(dron.getPosicion().getX(),dron.getPosicion().getY(),d);
         return Try.of(() -> new Dron(dron.getId(),posicion,dron.getEntregas()));
     }
-
-    /*public static Try<Dron> obtenerEntregasDron(Dron dron){
-        List<Entrega> entregas = ServicioEntrega.cargarRuta();
-        List<List<Entrega>> entregasDron = entregas.grouped(3).collect(List.collector());
-        List<Dron> map = entregasDron.map(listaEntrega -> {
-            return new Dron(1, new Posicion(0, 0, Direccion.NORTE), listaEntrega);
-        });
-        return new Dron(dron.getId(),dron.getPosicion(),);
-
-    }*/
-
-
 }

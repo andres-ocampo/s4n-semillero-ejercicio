@@ -4,8 +4,9 @@ import co.com.s4n.semillero.ejercicio.dominio.vo.Movimiento;
 import io.vavr.collection.List;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
-
+@NoArgsConstructor
 @AllArgsConstructor
 public class Entrega {
 

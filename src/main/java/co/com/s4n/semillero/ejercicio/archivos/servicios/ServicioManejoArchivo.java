@@ -31,17 +31,17 @@ public class ServicioManejoArchivo {
                 .ap((x,y)->"");
     }
 
-    public static List<String> leerArchivo(){
-        Path path = Paths.get("/home/s4n/in.txt");
-        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()));
+    public static  Try<List<String>> leerArchivo(){
+        Path path = Paths.get("src/main/resources/in.txt");
+        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()).filter(a -> a.matches("[A|I|D]+")));
         Validation<Seq<String>, String> res = validar(archivo);
-        return res.isValid() ? archivo.getOrElse(List.of()) : List.of();
+        return res.isValid() ? archivo : Try.failure(new Exception());
     }
 
 
     public static Try<String> escribirArchivo(List<Dron> reporteDrones){
         Path path = Paths.get("src/main/resources/out.txt");
-        Try<String> file = Try.of(() -> {
+        return Try.of(() -> {
             List<String> line = List.of();
             line = line.append("== Reporte de entregas ==");
             for (Dron dron : reporteDrones) {
@@ -51,9 +51,8 @@ public class ServicioManejoArchivo {
                         + ServicioManejoArchivo.enumToString(dron.getPosicion().getDireccion()));
             }
             Files.write(path, line, Charset.defaultCharset());
-            return "";
+            return "Archivo escrito con éxito";
         });
-        return file;
     }
 
     private static String enumToString(Direccion d){

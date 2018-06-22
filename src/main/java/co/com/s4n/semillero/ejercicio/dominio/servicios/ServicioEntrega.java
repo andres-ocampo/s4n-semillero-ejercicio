@@ -21,42 +21,44 @@ public class ServicioEntrega {
         Try<Dron> dronTry = Try.of(()->dron);
         for (int i = 0; i < entrega.getMovimientos().size(); i++) {
             if (entrega.getMovimientos().get(i).equals(Movimiento.A))
-                dronTry = ServicioDron.avanzar(dronTry.getOrElse(dron), new Barrio());
+                dronTry = ServicioDron.avanzar(dronTry.getOrElse(new Dron()), new Barrio());
             else if (entrega.getMovimientos().get(i).equals(Movimiento.D))
-                dronTry = ServicioDron.girarDerecha(dronTry.getOrElse(dron));
-            else dronTry = ServicioDron.girarIzquierda(dronTry.getOrElse(dron));
+                dronTry = ServicioDron.girarDerecha(dronTry.getOrElse(new Dron()));
+            else dronTry = ServicioDron.girarIzquierda(dronTry.getOrElse(new Dron()));
         }
         return dronTry;
     }
     
-    public static void iniciar(){
-        List<Entrega> entregas = ServicioEntrega.cargarRuta();
+    public static Try<String> iniciarDespacho(){
+        Try<List<Entrega>> entregasTry = ServicioEntrega.cargarRuta();
+        List<Entrega> entregas = validarEntregas(entregasTry);
         List<List<Entrega>> entregasDron = entregas.grouped(3).collect(List.collector());
         List<Dron> reporte = List.of();
         Dron dron = new Dron(1,
                 new Posicion(0, 0, Direccion.NORTE),
                 List.empty());
-        Try<Dron> dronTry= Try.of(()->new Dron(1,
-                new Posicion(0, 0, Direccion.NORTE),
-                List.empty()));
         for (List<Entrega> l:entregasDron) {
+            Try<Dron> dronTry= Try.of(()->dron);
             for (Entrega e:l) {
                 dronTry = realizarEntrega(dronTry.getOrElse(dron),e);
                 reporte = reporte.append(dronTry.getOrElse(dron));
             }
         }
-        ServicioManejoArchivo.escribirArchivo(reporte);
+        return ServicioManejoArchivo.escribirArchivo(reporte);
     }
 
-    public static List<Entrega> cargarRuta(){
-        List<String> archivo = ServicioManejoArchivo.leerArchivo();
-        List<Entrega> entregas = archivo.map(a -> {
-            List<Movimiento> of = List.of(Movimiento.A);
+    private static List<Entrega> validarEntregas(Try<List<Entrega>> entregas){
+        return entregas.isSuccess() ? entregas.getOrElse(List.of()) : List.of(new Entrega());
+    }
+
+    public static Try<List<Entrega>> cargarRuta(){
+        Try<List<String>> archivo = ServicioManejoArchivo.leerArchivo();
+        Try<List<Entrega>> entregas = archivo.flatMap(a -> Try.of(() -> a.map(b -> {
             Entrega entregaDron = new Entrega(true,
                     new Almuerzo(1, "Arroz Chino"),
-                    ServicioEntrega.charToMovimiento(a.toCharArray()));
+                    ServicioEntrega.charToMovimiento(b.toCharArray()));
             return entregaDron;
-        }).toList();
+        })));
         return entregas;
     }
 
@@ -67,6 +69,7 @@ public class ServicioEntrega {
                 case 'A': movimientos = movimientos.append(Movimiento.A); break;
                 case 'I': movimientos = movimientos.append(Movimiento.I); break;
                 case 'D': movimientos = movimientos.append(Movimiento.D); break;
+                default:  return List.of();
             }
         }
         return movimientos;
