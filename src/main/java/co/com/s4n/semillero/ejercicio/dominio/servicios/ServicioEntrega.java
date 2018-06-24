@@ -4,15 +4,12 @@ import co.com.s4n.semillero.ejercicio.archivos.servicios.ServicioManejoArchivo;
 import co.com.s4n.semillero.ejercicio.dominio.entidades.*;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Direccion;
 import co.com.s4n.semillero.ejercicio.dominio.vo.Movimiento;
-import io.vavr.collection.Iterator;
 import io.vavr.collection.List;
-import io.vavr.control.Option;
+import io.vavr.concurrent.Future;
 import io.vavr.control.Try;
 
-import java.util.ArrayList;
-import java.util.Dictionary;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class ServicioEntrega {
 
@@ -28,38 +25,50 @@ public class ServicioEntrega {
         }
         return dronTry;
     }
-    
-    public static Try<String> iniciarDespacho(){
-        Try<List<Entrega>> entregasTry = ServicioEntrega.cargarRuta();
-        List<Entrega> entregas = validarEntregas(entregasTry);
-        List<List<Entrega>> entregasDron = entregas.grouped(3).collect(List.collector());
-        List<Dron> reporte = List.of();
-        Dron dron = new Dron(1,
-                new Posicion(0, 0, Direccion.NORTE),
-                List.empty());
-        for (List<Entrega> l:entregasDron) {
-            Try<Dron> dronTry= Try.of(()->dron);
-            for (Entrega e:l) {
-                dronTry = realizarEntrega(dronTry.getOrElse(dron),e);
-                reporte = reporte.append(dronTry.getOrElse(dron));
-            }
+
+    public static Try<String> iniciarDespachoVeinteDrones(){
+        List<Try<List<Entrega>>> totalEntregas = ServicioEntrega.cargarRuta();
+        List<List<Entrega>> entregas = validarEntregas(totalEntregas);
+        List<List<Dron>> totalReportes = List.of();
+        ExecutorService service = Executors.newFixedThreadPool(20);
+        for (List<Entrega> entregasDron : entregas) {
+            List<List<Entrega>> entregasPorViajeDron = entregasDron.grouped(10).collect(List.collector());
+            Future<List<Dron>> listaDronesFuturo = iniciarFuturo(service, entregasPorViajeDron);
+            totalReportes = totalReportes.append(listaDronesFuturo.getOrElse(List.of(new Dron())));
+            listaDronesFuturo.await();
         }
-        return ServicioManejoArchivo.escribirArchivo(reporte);
+        ServicioManejoArchivo.escribirArchivo(totalReportes);
+        return Try.of(()->"");
     }
 
-    private static List<Entrega> validarEntregas(Try<List<Entrega>> entregas){
-        return entregas.isSuccess() ? entregas.getOrElse(List.of()) : List.of(new Entrega());
+    private static Future<List<Dron>> iniciarFuturo(ExecutorService service, List<List<Entrega>> entregasPorViajeDron) {
+        return Future.of(service, () -> {
+            List<Dron> reporte = List.of();
+            Dron dron = new Dron(1, new Posicion(0, 0, Direccion.NORTE), List.empty());
+            for (List<Entrega> l : entregasPorViajeDron) {
+                Try<Dron> dronTry = Try.of(() -> dron);
+                for (Entrega e : l) {
+                    dronTry = realizarEntrega(dronTry.getOrElse(dron), e);
+                    reporte = reporte.append(dronTry.getOrElse(dron));
+                }
+            }
+            return reporte;
+        });
     }
 
-    public static Try<List<Entrega>> cargarRuta(){
-        Try<List<String>> archivo = ServicioManejoArchivo.leerArchivo();
-        Try<List<Entrega>> entregas = archivo.flatMap(a -> Try.of(() -> a.map(b -> {
+    private static List<List<Entrega>> validarEntregas(List<Try<List<Entrega>>> entregas){
+        return entregas.map(a -> a.getOrElse(List.of(new Entrega())));
+    }
+
+    public static List<Try<List<Entrega>>> cargarRuta(){
+        List<Try<List<String>>> archivos = ServicioManejoArchivo.leerArchivoVeinteDrones();
+        List<Try<List<Entrega>>> totalEntregas = archivos.map(a -> a.flatMap(b -> Try.of(() -> b.map(c -> {
             Entrega entregaDron = new Entrega(true,
                     new Almuerzo(1, "Arroz Chino"),
-                    ServicioEntrega.charToMovimiento(b.toCharArray()));
+                    ServicioEntrega.charToMovimiento(c.toCharArray()));
             return entregaDron;
-        })));
-        return entregas;
+        }))));
+        return totalEntregas;
     }
 
     public static List<Movimiento> charToMovimiento(char[] movs){

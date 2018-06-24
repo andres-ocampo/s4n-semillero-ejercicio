@@ -31,28 +31,42 @@ public class ServicioManejoArchivo {
                 .ap((x,y)->"");
     }
 
-    public static  Try<List<String>> leerArchivo(){
-        Path path = Paths.get("src/main/resources/in.txt");
-        Try<List<String>> archivo = Try.of(() -> Files.lines(path).collect(List.collector()).filter(a -> a.matches("[A|I|D]+")));
-        Validation<Seq<String>, String> res = validar(archivo);
-        return res.isValid() ? archivo : Try.failure(new Exception());
+    public static  List<Try<List<String>>> leerArchivoVeinteDrones(){
+        List<Try<List<String>>> totalArchivos = List.of();
+        for (int i = 1; i <= 20; i++) {
+            String s = i < 10 ? "0"+i : String.valueOf(i);
+            Path path = Paths.get("src/main/resources/in"+s+".txt");
+            Try<List<String>> archivo = Try.of(() -> Files.lines(path)
+                    .collect(List.collector()).filter(a -> a.matches("[A|I|D]+")));
+            Validation<Seq<String>, String> res = validar(archivo);
+            if(res.isValid()) totalArchivos = totalArchivos.append(archivo);
+        }
+        return totalArchivos;
     }
 
 
-    public static Try<String> escribirArchivo(List<Dron> reporteDrones){
-        Path path = Paths.get("src/main/resources/out.txt");
+    public static Try<String> escribirArchivo(List<List<Dron>> reporteDrones){
         return Try.of(() -> {
-            List<String> line = List.of();
-            line = line.append("== Reporte de entregas ==");
-            for (Dron dron : reporteDrones) {
-                line = line.append("(" + dron.getPosicion().getX()
-                        + ", " + dron.getPosicion().getY()
-                        + ") dirección "
-                        + ServicioManejoArchivo.enumToString(dron.getPosicion().getDireccion()));
+            for (int i = 1; i <= reporteDrones.size(); i++) {
+                String s = i < 10 ? "0" + i : String.valueOf(i);
+                Path path = Paths.get("src/main/resources/out" + s + ".txt");
+                List<String> line = crearReporte(reporteDrones, i-1);
+                Files.write(path, line, Charset.defaultCharset());
             }
-            Files.write(path, line, Charset.defaultCharset());
             return "Archivo escrito con éxito";
         });
+    }
+
+    private static List<String> crearReporte(List<List<Dron>> reporteDrones, int i) {
+        List<String> line = List.of();
+        line = line.append("== Reporte de entregas ==");
+        for (Dron dron : reporteDrones.get(i)) {
+            line = line.append("(" + dron.getPosicion().getX()
+                    + ", " + dron.getPosicion().getY()
+                    + ") dirección "
+                    + ServicioManejoArchivo.enumToString(dron.getPosicion().getDireccion()));
+        }
+        return line;
     }
 
     private static String enumToString(Direccion d){
